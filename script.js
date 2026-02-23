@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const birdImages = [
         './5825585691046383151.jpg', 
-        './5825585691046383151.jpg', 
+        './5825585691046383150.jpg', 
         './5825585691046383150.jpg'  
     ];
     
@@ -245,6 +245,7 @@ function gameOver() {
     
     startScreen.style.display = 'flex';
 });
+
 
 
 
