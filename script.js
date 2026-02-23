@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let pipeFrequency = 1800;
     
     const birdImages = [
-        './5897551102197483320.jpg', 
-        './5897551102197483319.jpg', 
-        './5897551102197483318.jpg'  
+        './5825585691046383151.jpg', 
+        './5825585691046383150.jpg', 
+        './5825585691046383151.jpg'  
     ];
     
     function initGame() {
@@ -230,3 +230,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     startScreen.style.display = 'flex';
 });
+
