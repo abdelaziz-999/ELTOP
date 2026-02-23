@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    function gameOver() {
+function gameOver() {
         isGameOver = true;
         clearInterval(gameLoop);
         clearInterval(pipeInterval);
@@ -222,12 +222,28 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bird && bird.parentNode) {
             bird.remove();
         }
+
+        const loseImage = document.createElement('img');
+        loseImage.src = './5825585691046383147.jpg';
+        loseImage.id = 'lose-display-img';
+        loseImage.style.position = 'absolute';
+        loseImage.style.top = '50%';
+        loseImage.style.left = '50%';
+        loseImage.style.transform = 'translate(-50%, -50%)';
+        loseImage.style.width = '200px'; 
+        loseImage.style.zIndex = '100';
+        gameContainer.appendChild(loseImage);
+        
         
         finalScoreElement.textContent = score;
-        
         gameOverScreen.style.display = 'block';
+
+      restartButton.addEventListener('click', () => {
+            loseImage.remove();
+        }, { once: true });
     }
     
     startScreen.style.display = 'flex';
 });
+
 
